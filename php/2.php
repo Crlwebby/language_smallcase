@@ -5,9 +5,9 @@
     </head>
     <body>
     <?php
-        $x = $_GET["first"];
-        $y = $_GET["second"];
-        $z = $_GET["third"];
+        $x = $_POST["first"];
+        $y = $_POST["second"];
+        $z = $_POST["third"];
         $temp = $x;
         if($x>$y){
             $x=$y;
