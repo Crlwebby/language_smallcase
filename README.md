@@ -1,2 +1,2 @@
-# language_rudiments
-100 little tasks to learn the basic grammar of various language
+简单的样例程序|leetcode|100行以内的demo代码
+用作收集零散代码|语言小特性学习|刷算法
