@@ -1,19 +1,14 @@
 int maxSatisfied(int* customers, int customersSize, int* grumpy, int grumpySize, int X){
-    int result = 0;
+    int max = 0, result = 0;
     for(int i = 0; i < customersSize; i++){
         if(!grumpy[i])
             result += customers[i];
-    }
-    int max=0,temp=0;
-    for(int i = 0; i <= customersSize - X; i++){
-        temp = 0;
-        for(int j = 0; j < X; j++){
-            temp += grumpy[i + j]?customers[i + j]:0;
-        }
-        if(temp > max){
-            temp = temp ^ max;
-            max = temp ^ max;
-            temp = temp ^ max;
+        if(i <= customersSize - X){
+            int temp = 0;
+            for(int j = 0; j < X; j++)
+                temp += grumpy[i + j]?customers[i + j]:0;
+            if(temp > max)
+                max = temp;
         }
     }
     result += max;
