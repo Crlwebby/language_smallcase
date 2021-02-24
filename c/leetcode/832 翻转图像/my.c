@@ -14,9 +14,11 @@ int** flipAndInvertImage(int** A, int ASize, int* AColSize, int* returnSize, int
         }
     }
     *returnSize = ASize;
-    returnColumnSizes = &AColSize;
+    *returnColumnSizes = AColSize;
     return A;
 }
 //始终看不明白，明明都能全部运行完毕，到最后return给我报一个出错了？
 //什么鬼一样的AddressSanitizer，还不能提供报错信息……裂开了啊
 //自我调试，就是printf所有运行信息的时候都是对的，就这样吧……心累了
+
+//看Debug commit……还是C语言没学好，看见二维指针就犯怵
