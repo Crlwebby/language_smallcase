@@ -8,11 +8,11 @@ NumMatrix* numMatrixCreate(int** matrix, int matrixSize, int* matrixColSize){
     if(matrixSize == 0){
         return NULL;
     }
-    NumMatrix *temp = (NumMatrix *)malloc(sizeof(NumMatrix));
+    NumMatrix *temp = malloc(sizeof(NumMatrix));
     int colsize = *matrixColSize;
-    temp->result = (int **)malloc(sizeof(int*) * matrixSize);
+    temp->result = malloc(sizeof(int*) * matrixSize);
     for(int i = 0; i < matrixSize; i++){
-        temp->result[i] = (int *)malloc(sizeof(int) * colsize);
+        temp->result[i] = malloc(sizeof(int) * colsize);
         memset(temp->result[i],0,sizeof(int) * colsize);
     }
     temp->matrixSize = matrixSize;
