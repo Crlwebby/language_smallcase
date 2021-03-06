@@ -1,0 +1,3 @@
+Now then, let's build the rest of the app and run it with a special artisan command (to save ourselves the hassle of installing and configuring a web server like Apache or nginx). 
+The .env file contains all the configuration values that the files in the /config directory use to configure the application. 
+Inside it, you will notice that the configuration value for various parameters used by the internals of the application.

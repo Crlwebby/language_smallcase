@@ -1,15 +1,10 @@
 #include<stdio.h>
+#include<conio.h>
 #define TEN 10
 
 int main(void){
     char ch;
-    ch = getchar();
-    if(ch == '\n'){
-        printf("yeeeeees!\n");
-    }
-    else{
-        printf("??????\n");
-    }
-    printf("%d\n",ch);
+    while((ch = getche()) != '#')
+        printf("\n");
     return 0;
 }
