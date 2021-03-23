@@ -3,8 +3,9 @@
 
 #define MASK1 0x00
 #define MASK2 0xff
-#define test(x) ( !(x ^ ~MASK1) || !(x ^ MASK1) || !((x & MASK2) ^ MASK2) || !(x >> ((sizeof(int)-1)<<3)))
-
+#define test(x) ( !(~x) || !x || !((x & MASK2) ^ MASK2) || !(x >> ((sizeof(int)-1)<<3)))
+//与全1进行异或，不就是取反吗。。。
+//与全0异或，不就是原本的数吗。。。
 int main(void){
     int x = 0xffffffff;
     int y = 0x00000000;
