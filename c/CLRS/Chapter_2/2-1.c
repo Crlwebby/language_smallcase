@@ -3,7 +3,7 @@
 #include<sys/time.h>
 #include<stdlib.h>
 
-#define SIZE 100000000
+#define SIZE 500000
 void merge_sort_origin(int a[], int begin, int end);
 void merge_sort_improve(int a[], int begin, int end);
 void merge(int a[], int begin, int mid, int end);
@@ -24,11 +24,11 @@ int main(){
     gettimeofday(&end,NULL);
     timeuse = 1000000 * ( end.tv_sec - start.tv_sec ) + end.tv_usec - start.tv_usec;
     printf("原始方法消耗的时间为 %f\n",(double)timeuse/1000000);
-    /*gettimeofday(&start,NULL);
-    merge_sort_improve(b,0,len-1);
+    gettimeofday(&start,NULL);
+    merge_sort_improve(b,0,SIZE-1);
     gettimeofday(&end,NULL);
     timeuse = 1000000 * ( end.tv_sec - start.tv_sec ) + end.tv_usec - start.tv_usec;
-    printf("改良方法消耗的时间为 %f\n",(double)timeuse/1000000);*/
+    printf("改良方法消耗的时间为 %f\n",(double)timeuse/1000000);
     return 0;
 }
 
