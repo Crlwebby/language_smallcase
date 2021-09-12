@@ -23,9 +23,11 @@ func main() {
 	for _, i := range a {
 		fmt.Printf("%d\t", i)
 	}
+	//冒泡排序
 	fmt.Println("")
 
 	c := [...]int{1, 3, 5, 7, 9, 11}
+	//定义数组
 	d := c[:]
 	b := make([]int, 10, 20)
 	b = append(b, 2, 4)
