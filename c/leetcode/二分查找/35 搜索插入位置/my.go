@@ -11,7 +11,7 @@ func searchInsert(nums []int, target int) int {
 			start = mid + 1
 		}
 	}
-	return left
+	return start
 }
 
 //天哪，比以前还蠢了？看上次代码写的，就那么三四行，现在怎么回事嘛……
