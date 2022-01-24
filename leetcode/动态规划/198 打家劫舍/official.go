@@ -5,6 +5,8 @@ func rob(nums []int) int {
 	} else if len == 2 {
 		return max(nums[0], nums[1])
 	}
+	//max(i) = max(max(i-2)+v[i],max(i-1))
+	//偷前一家，这家不能偷；或者前一家没偷，偷这一家。
 	first, second := nums[0], max(nums[0], nums[1])
 	for _, v := range nums[2:] {
 		first, second = second, max(first+v, second)
