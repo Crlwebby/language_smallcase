@@ -9,5 +9,5 @@ func main() {
 	fmt.Println(t1[0:3])
 	fmt.Println(t1[1:3])
 	fmt.Println(t1[0:7])
-	fmt.Println(t1[0:])
+	fmt.Println(t1[8:])
 }
