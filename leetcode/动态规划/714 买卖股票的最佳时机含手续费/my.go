@@ -10,13 +10,6 @@ func maxProfit(prices []int, fee int) int {
 	return dp[len-1][1]
 }
 
-func max(a int, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 //说是说自己写的，但是实际上还是参考买卖股票Ⅱ的官方答案然后写的。
 //就是不是很理解，为什么这样一个状态转移方程，就能计算出来正确的结果呢？
 //按照贪心的策略，肯定是记录所有上升期的收益，然后进行一个判断（零手续费的情况下）

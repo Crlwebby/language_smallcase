@@ -13,13 +13,6 @@ func maxProfit(prices []int) int {
 	return max(dp[len-1][1], dp[len-1][2])
 }
 
-func max(a int, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 //这个好难……三个DP方程搞在一起，让我即使看了一遍题解，也很难写出来，还是边看题解边写的
 //三个状态实在是，太绕了。冷冻期和非冷冻期代表的到底是什么含义呢？
 //冷冻期是卖出后的第一天，非冷冻期是卖出后的若干天；有可能这若干天都是跌的，那就一直是非冷冻期，但是也不买？
