@@ -1,12 +1,13 @@
 #include<stdio.h>
 
 struct a{
-    int a;
-    char b;
+    char t[4];
+    char k[4];
+    unsigned short i:8;
+    unsigned char *p;
+    unsigned long m:3;
 }test;
 int main(){
     printf("%d\n",sizeof(test));
-    char c[] = "abcde";
-    printf("%d\n",sizeof(c));
     return 0;
 }
