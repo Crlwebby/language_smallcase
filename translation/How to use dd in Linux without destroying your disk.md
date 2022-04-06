@@ -1,1 +1,0 @@
-original artical address:https://opensource.com/article/18/7/how-use-dd-linux
