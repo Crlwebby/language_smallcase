@@ -1,0 +1,6 @@
+[submodule "os-workbench-2022"]
+	path = os-workbench-2022
+	url = https://github.com/NJU-ProjectN/os-workbench-2022
+[submodule "Reading/ostep/os-workbench-2022"]
+	path = Reading/ostep/os-workbench-2022
+	url = https://github.com/NJU-ProjectN/os-workbench-2022
